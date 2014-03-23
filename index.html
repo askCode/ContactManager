@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			COMP333 Assignment 1
+		</title>
+		<link href="./css/styles.css" rel="stylesheet" type="text/css">
+		<script src="./javascript/groupList.js"></script>
+		<script src="./javascript/contactDetails.js"></script>
+		<script src="./javascript/unGroupContact.js"></script>
+		<script src="./javascript/newContact.js"></script>
+	</head>
+	
+	<body class="font_black" onload="JavaScript:showGroupList('all')">
+		
+		<div class="container">
+			
+    		<div class="banner">		 
+    				<span class="page_title"> <a href="../comp333assn1/index.html">CONTACT MANAGER </a>
+    					<p> </p>
+    				</span>						
+    		</div>
+    		
+    		<div class="content">
+				<div class="left">
+									
+					<!--<h2>Contact Groups</h2> -->
+					<ol>
+						<li id="all" onclick="Javascript:showGroupList('all');"><a>All Contacts</a></li>
+						<li id="family" onclick="Javascript:showGroupList('family');"><a>Family</a></li>
+						<li id="friends" onclick="Javascript:showGroupList('friends');"><a>Friends</a></li>
+						<li id="colleagues" onclick="Javascript:showGroupList('colleagues');"><a>Colleagues</a></li>
+						<li id="ungrouped" onclick="Javascript:showGroupList('ungrouped');"><a>Ungrouped</a></li>
+					</ol>
+					<div id="addNewContact">
+						<button type="button" onclick="JavaScript:newContact();">Add New Contact</button>
+					</div>
+					<p id = "removeContactButton"></p>
+				</div>
+				
+				<div id="newContact1" class="right">
+					<div id="newContactPanel" class="">
+						<!--<h2> Add New Contact</h2> -->
+						<div id="newContact"></div>
+					</div>
+					<div id ="topPanel" class="" >
+							<!--<h2>Contact Info!</h2> -->
+							<div id="groupList"></div>
+					</div>
+				
+					<div id="bottomPanel" class="">
+						<h2>Contact Details!</h2>
+						<div id="contactDetails"></div>
+					</div>
+				</div>
+				
+			</div>	
+
+			<div class="footer">
+	    		 Copyright &copy; 2012 &mdash; Ajit Musalgavkar
+	    	</div>
+		</div>
+	</body>
+</html>

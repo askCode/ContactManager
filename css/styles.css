@@ -1,0 +1,183 @@
+/*css style setting for the body element */
+body {
+	background-color: #e1ddd9;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	margin:	0px;
+	margin-top: 10px;
+}
+
+/*css style setting for the container class */
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+/*css style setting for the banner class */
+.banner {
+	background-color: #87CEEB;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+	
+.content{
+	padding: 2px;
+	
+}
+
+.left{
+	float: left;
+	width: 200px;
+	border: 1px dotted green;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: #F0F8FF;
+	min-height: 475px;
+	padding: 2px;
+}
+.left > ol > li{
+	font-size: 16px;
+	margin: 5px;
+	padding: 2px;
+	background-color: #AFEEEE; 
+	list-style-type: none;
+	width: 100px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+a {
+	text-decoration: none;
+}
+li a:hover {
+	color: #DDDDDD;
+	background-color: #696969;
+}
+
+#addNewContact{
+	text-align: center;
+}
+.right{
+	float: right;
+	width: 790px;
+	border: 0px solid black;	
+}
+
+#newContactPanel, #topPanel{
+	border: 1px solid blue;
+	border-left: 0px solid blue;
+	border-top-right-radius: 5px;
+	background: #F0F8FF; /* #F0FFFF;*/
+	min-height: 240px;
+	padding-left: 5px;
+}
+
+#bottomPanel{
+	margin-top: 1px;
+	border: 1px solid gray;
+	border-left: 0px solid blue;
+	border-bottom-right-radius: 5px;
+	background: #FFC0CB;
+	min-height: 150px;
+	padding-left: 5px;
+}
+.footer{
+	clear: both;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #87CEEB;
+	color: black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+}
+
+#addContactForm{
+	margin: 0 auto;
+	width: 400px;
+	padding: 25px;
+	border: 2px solid lightblue;
+	background: #ebf4fb;
+	border-radius: 5px;
+	min-height : 340px;
+}
+
+#addContactForm > h1{
+	font-size:	14px;
+	font-weight:	bold;
+	margin-bottom:	8px;
+	color: blue;
+	text-align: center;
+}
+
+#addContactForm > label{
+	display: block;
+	font-weight: bold;
+	text-align: right;
+	width: 140px;
+	float: left;
+}
+
+#addContactForm > input{
+	float: left;
+	font-size: 12px;
+	border: 1px solid blue;
+	width: 125px;
+	margin: 2px 0 10px 10px;
+}
+
+.groupSelect{
+	font-weight: bold;
+    width: 240px;
+    text-align: right;
+    padding-top: 8px;
+}
+
+.addressTextArea{
+	font-weight: bold;
+    width: 320px;
+    text-align: right;
+}
+
+#saveFormBtn{
+	text-align: center;
+}
+
+#addContactForm input:hover, textarea:hover{
+	background-color: gray;
+}
+
+/* css for hiding and showing new Contact and other divs */
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+table td {
+	width: 65px;
+	padding: 1px;
+	border-bottom: 1px solid black;
+}
+table td:nth-child(1){
+	border: none;
+}
+
+table th {
+	font-size: 10px;
+	border-bottom: 1px solid black;
+}
+
+table th:nth-child(1){
+	border: none;
+}
